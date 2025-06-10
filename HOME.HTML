@@ -21,6 +21,36 @@
       }
     }
   </script>
+      <style>
+          nav {
+      position: relative;
+      }
+
+      nav ul ul {
+      position: absolute;
+      background-color: #292E36;
+      padding: 0;
+      text-align: left;
+      display: none;
+      }
+
+      nav ul ul li {
+      border: 1px solid #e7e7ed;
+      display: block;
+      width: 7em;
+      padding-left: 1em;
+      margin-left: 0;
+      }
+
+      nav li:hover ul {
+      display: block;
+      }
+      nav ul ul li:hover {
+        background-color: #a7b9fc;
+      }
+
+
+    </style>
 </head>
 <body class="bg-[#fff7f3] font-josephanslap">
   <header class="bg-[#292E36] md:h-[500px] text-white font-josephanslap ">
@@ -29,7 +59,7 @@
     <div class="max-w-screen-xl  px-4 ">
       <button class="border border-lime-400 text-white px-4 py-1 text-sm mb-4 md:mb-0   ">Mohamed's design</button>
     </div>
-    <img src="loogo.jpg" alt="Logo" class="h-20 mb-4 md:mb-0 mx-60 justify-center " />
+    <img src="photos/loogo.jpg" alt="Logo" class="h-20 mb-4 md:mb-0 mx-60 justify-center " />
 
     <nav class="text-bottom">
       <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 md:space-x-12 px-4 items-center tracking-tight">
@@ -38,6 +68,18 @@
         <li><a href="jus.html" class="hover:text-blue-400 whitespace-nowrap">About JUS</a></li>
         <li><a href="xaafadeyda.html" class="hover:text-blue-400 whitespace-nowrap">About Village</a></li>
         <li><a href="contact.html" class="hover:text-blue-400 whitespace-nowrap">Contact</a></li>
+       <li>
+        <span class="cursor-pointer hover:text-blue-400 whitespace-nowrap">Others</span>
+        <!-- <a href="others.html">Others</a> -->
+        <ul>
+          <li><a href="ch6.html">Chapter (6)</a></li>
+          <li><a href="ch7.html">Chapter (7)</a></li>
+          <li><a href="ch8.html">Chapter (8)</a></li>
+          <li><a href="ch9.html">Chapter (9)</a></li>
+          <li><a href="ch10.html">Chapter (10)</a></li>
+        </ul>
+    </li>
+        <!-- <li><a href="others.html" class="hover:text-blue-400 whitespace-nowrap">Others</a></li> -->
       </ul>
       <div class="space-x-3 mb-2 text-center md:text-right px-4">
         <a href="https://www.instagram.com/mohamed.isak___73?igsh=aHNxZWV2NjFveGxl" target="_blank"><i class="fab fa-instagram hover:text-[#4a90e2]"></i></a>
@@ -56,7 +98,7 @@
         WEBSITE <br /><br />
         <p class="text-sm">Waa mohamed soo dhawoow markale wanku faraxsanahay inaad isoo booqatay</p>
       </h1>
-      <img class="h-60 md:h-80 rounded-t-full border border-gray-500" src="hero.jpg" alt="ero pic" />
+      <img class="h-60 md:h-80 rounded-t-full border border-gray-500 flout-right-10" src="hero.jpg" alt="ero pic" />
     </div>
   </header>
 
@@ -86,14 +128,14 @@
       <div class="flex flex-col md:flex-row md:items-center md:gap-12">
         <div class="mt-10 grid md:grid-cols-2 gap-6 w-full">
           <div class="flex justify-center mx-auto">
-            <!-- <img src="dream.png" alt=" students dream " class="h-80"> -->
+            <!-- <img src="photos/dream.png" alt=" students dream " class="h-80"> -->
             
            
-  <!-- <img  src="dream.png" alt="Students dream" class="  rounded-lg shadow-lg w-[250px] h-80 object-cover" />
+  <!-- <img  src="photos/dream.png" alt="Students dream" class="  rounded-lg shadow-lg w-[250px] h-80 object-cover" />
 
             <img src="web.jpg" alt="Website Logo" class="h-60" /> -->
             <div class="flex gap-4 -ml-16">
-  <img src="dream.png" alt="Students dream" class="h-80 object-cover rounded-lg shadow-lg" />
+  <img src="photos/dream.png" alt="Students dream" class="h-80 object-cover rounded-lg shadow-lg" />
   <img src="web.jpg" alt="Website Logo" class="w-80 h-80 object-cover rounded-lg shadow-lg ml-12" />
 </div>
 
@@ -118,14 +160,14 @@
       </div>
     </div>
   </section>
-  <!-- <img src="dream.png" alt=" students dream " class=" w-64 h-40"> -->
+  <!-- <img src="photos/dream.png" alt=" students dream " class=" w-64 h-40"> -->
 
 
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-center text-gray-400 p-6 border-t border-gray-700">
     <div class="flex justify-center mb-2">
-      <img src="loogo.jpg" alt="Logo" class="h-10" />
+      <img src="logo.jpg" alt="Logo" class="h-10" />
     </div>
     <div class="text-sm text-left px-4 md:px-0">MOHAMED ISAK</div>
     <div class="space-x-3 mb-2 text-center md:text-right px-4">
