@@ -13,34 +13,28 @@ body {font-family:Verdana, Arial, sans-serif;
 		   margin: auto;
            min-width:940px;
 } 
-nav { float: left;
+#leftcolumn { float: left;
 	          width: 150px;
 } 
-nav ul { list-style-type: none;
-         padding: 10px; }
-nav a { text-decoration: none;
-        padding: 10px;
-		font-weight: bold;
-}
-main { margin-left: 155px;
+#rightcolumn { margin-left: 155px;
                background-color: #ffffff;
                color: #000000;
-			   padding: 1em; 
 } 
 header { background-color: #869dc7;
         color: #00005D; 
-		background-image: url(light.gif); 
-		padding: 1.5em 0 2em 190px;
-		font-size: 130%;
-		min-width: 750px;
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+		background-image: url(lighthouselogo.jpg); 
 		background-repeat: no-repeat;
-		font-family: Verdana, Tahoma, Arial, sans-serif;
+		height: 130px;
 }
-h1 { margin-bottom: 0; }
 h2 { color: #869dc7; 
      font-family: arial, sans-serif;
+	 padding-bottom: 1em;
 }
-
+p { margin-bottom: 3em; }
+.content {padding: 20px 20px 0 20px; 
+} 
 #floatright { margin: 10px;
              float: right;
 }
@@ -48,9 +42,16 @@ h2 { color: #869dc7;
 footer {font-size:70%;
          text-align: center;
 		 clear: right;
-         padding-bottom:20px;
+         padding-bottom: 5em;
+		 padding-top: 5em;
 }
-header, nav, main, footer { display: block; }
+nav { position: fixed; }
+nav ul { list-style-type: none; 
+         padding: 10px; }
+nav a { text-decoration: none; 
+        padding: 10px;
+        font-weight: bold; }
+
 </style> 
 </head>
 <body>
@@ -58,17 +59,20 @@ header, nav, main, footer { display: block; }
   <header>
     <h1>Lighthouse Island Bistro</h1>
   </header>
+  <div id="leftcolumn">
     <nav>
-	<ul>
+	 <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="rooms.html">Menu</a></li>
       <li><a href="directions.html">Directions</a></li>
       <li><a href="contact.html">Contact</a></li>
 	 </ul>
     </nav>
-  <main>	
-    <img src="lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
-    <h2>Locally Roasted Free-Trade Coffee</h2>
+  </div>
+  <div id="rightcolumn">
+    <div class="content"> 
+      <img src="lighthouseisland.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+	<h2>Locally Roasted Free-Trade Coffee</h2>
     <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
     <h2>Specialty Pastries</h2>
     <p>Enjoy a selection of our fresh-baked, organic pastries, including 
@@ -77,10 +81,11 @@ header, nav, main, footer { display: block; }
     <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
     <h2>Panoramic View</h2>
 	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.</p>
-  </main>
+    </div>
     <footer>Copyright &copy; 2020
     </footer>
   </div>
+</div>
 </body>
 </html>
 

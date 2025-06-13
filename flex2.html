@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Grid Gallery</title>
+<title>Flexbox Gallery</title>
 <meta charset="utf-8">
 <style>
+
 * { box-sizing: border-box; }
 body { background-color: #FEFEFE; }
-header { text-align: center; } 
-	 
+header { text-align: center; }
 
-	 
-	 
-	 
-	 
-	 
+#gallery { display: flex; 
+           flex-wrap: wrap;     
+ }
+		 
+
 </style> 
 </head>
 <body>
   <header>
-    <h1>Grid Gallery</h1>
+    <h1>Flexbox Gallery</h1>
   </header>
   <main> 
  	 <div id="gallery">
@@ -29,6 +29,7 @@ header { text-align: center; }
 	   <img src="bird5.jpg" width="200" height="150" alt="Coopers Hawk">
 	   <img src="bird6.jpg" width="200" height="150" alt="Immature Bald Eagle"> 
 	 </div>
+	 
   </main>
 </body>
 </html>
