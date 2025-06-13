@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed's Design</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="icon" href="favicon.png" type="photos/x-icon">
+  <link rel="icon" href="photos/favicon.png" type="photos/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,19 +19,65 @@
       }
       }
   </script>
+    </script>
+      <style>
+          nav {
+      position: relative;
+      }
+
+      nav ul ul {
+      position: absolute;
+      background-color: #292E36;
+      padding: 0;
+      text-align: left;
+      display: none;
+      }
+
+      nav ul ul li {
+      border: 1px solid #e7e7ed;
+      display: block;
+      width: 7em;
+      padding-left: 1em;
+      margin-left: 0;
+      }
+
+      nav li:hover ul {
+      display: block;
+      }
+      nav ul ul li:hover {
+        background-color: #a7b9fc;
+      }
+
+
+    </style>
 </head>
 <body class="bg-white text-gray-800 font-josephanslap">
   <!-- Header -->
     <header class="bg-[#3a4550] text-white py-4">
     <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
       <button class="border border-lime-400 text-white px-4 py-1 text-sm mb-4 md:mb-0">Mohamed's design</button>
-      <img src="loogo.jpg" alt="Logo" class="h-20 mb-4 md:mb-0" />
+      <img src="photos/loogo.jpg" alt="Logo" class="h-20 mb-4 md:mb-0" />
       <nav class="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-6 text-sm">
-        <a href="HOME.HTML" class="hover:text-blue-400">HOME</a>
-        <a href="aboutme.html" class="hover:text-blue-400">ABOUT ME</a>
-        <a href="jus.html" class="hover:text-blue-400">JUS</a>
-        <a href="xaafadeyda.html" class="hover:text-blue-400">XAAFADA</a>
-        <a href="contact.html" class="hover:text-blue-400">CONTACTS</a>
+            <!-- <nav class="text-bottom"> -->
+      <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 md:space-x-12 px-4 items-center tracking-tight">
+        <li><a href="HOME.HTML" class="hover:text-blue-400 whitespace-nowrap">Home</a></li>
+        <li><a href="aboutme.html" class="hover:text-blue-400 whitespace-nowrap">About me</a></li>
+        <li><a href="jus.html" class="hover:text-blue-400 whitespace-nowrap">About JUS</a></li>
+        <li><a href="xaafadeyda.html" class="hover:text-blue-400 whitespace-nowrap">About Village</a></li>
+        <li><a href="contact.html" class="hover:text-blue-400 whitespace-nowrap">Contact</a></li>
+       <li>
+        <span class="cursor-pointer hover:text-blue-400 whitespace-nowrap">Others</span>
+        <!-- <a href="others.html">Others</a> -->
+        <ul>
+          <li><a href="cha6.html">Chapter (6)</a></li>
+          <li><a href="cha7.html">Chapter (7)</a></li>
+          <li><a href="cha8.html">Chapter (8)</a></li>
+          <li><a href="cha9.html">Chapter (9)</a></li>
+          <li><a href="cha10.html">Chapter (10)</a></li>
+        </ul>
+    </li>
+        
+
       <div class="space-x-3 mb-2 text-right">
         <a href="https://www.instagram.com/mohamed.isak___73?igsh=aHNxZWV2NjFveGxl"target="_blank"><i class="fab fa-instagram  hover:text-[#4a90e2]"></i></a>
         <a href="https://www.facebook.com/mohamed.isak.5055"target="_blank"><i class="fab fa-facebook hover:text-[#4a90e2]"></i></a>
